@@ -1,0 +1,37 @@
+:root {
+    --primary: #00d4ff;
+    --primary-dark: #00a8cc;
+    --secondary: #ff2d75;
+    --dark-bg: #0d1117;
+    --card-bg: #161b22;
+    --card-hover: #1c2330;
+    --text-light: #e1e7ef;
+    --text-dim: #8b949e;
+    --success: #00ff9d;
+    --warning: #ffcc00;
+    --pulse: rgba(0, 212, 255, 0.4);
+}
+
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family:'Poppins',sans-serif;background:var(--dark-bg);color:var(--text-light);height:100vh;}
+
+.container{max-width:1200px;margin:0 auto;padding:20px;}
+header{text-align:center;margin-bottom:40px;}
+.logo{font-size:2.5rem;font-weight:700;margin-bottom:10px;background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;background-clip:text;color:transparent;display:inline-block;}
+.subtitle{color:var(--text-dim);font-weight:300;margin-bottom:20px;}
+
+.reviews-section{background:var(--card-bg);padding:20px;border-radius:15px;box-shadow:0 4px 20px rgba(0,0,0,0.2);}
+.reviews-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;}
+.add-review-btn{padding:10px 15px;background:var(--primary);color:var(--dark-bg);border:none;border-radius:10px;cursor:pointer;}
+.review-card{background:var(--card-hover);padding:15px;margin-bottom:15px;border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+.review-header{display:flex;align-items:center;margin-bottom:10px;}
+.review-avatar{width:40px;height:40px;background:var(--secondary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--dark-bg);font-weight:700;margin-right:10px;}
+.review-info h3{margin-bottom:0;font-size:1rem;}
+.review-rating i{color:var(--warning);}
+.review-content{margin-top:10px;font-size:0.9rem;}
+.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);display:none;justify-content:center;align-items:center;}
+.modal{background:var(--card-bg);padding:20px;border-radius:15px;width:90%;max-width:400px;position:relative;}
+.close-modal{position:absolute;top:10px;right:10px;background:none;border:none;color:var(--text-light);font-size:1.5rem;cursor:pointer;}
+.form-group{margin-bottom:15px;}
+.form-control{width:100%;padding:8px;border-radius:8px;border:none;background:#0d1117;color:var(--text-light);}
+.submit-review{width:100%;padding:10px;background:var(--primary);color:#fff;border:none;border-radius:10px;cursor:pointer;}
