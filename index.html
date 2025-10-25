@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ollique Rewards</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="logo">Ollique Rewards</h1>
+        <p class="subtitle">Earn daily rewards, share & buy products!</p>
+    </header>
+
+    <!-- Reviews Section -->
+    <div class="reviews-section" id="reviewsSection">
+        <div class="reviews-header">
+            <h2 class="section-title"><i class="fas fa-star"></i> User Reviews</h2>
+            <button id="openModal" class="add-review-btn"><i class="fas fa-plus"></i> Add Review</button>
+        </div>
+        <div id="reviewCards"></div>
+    </div>
+</div>
+
+<!-- Add Review Modal -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <div class="modal-header">
+            <h2 class="modal-title">Add Your Review</h2>
+            <button class="close-modal" id="closeModal">&times;</button>
+        </div>
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="userName">Your Name</label>
+                <input type="text" id="userName" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label>Your Rating</label>
+                <div class="rating-selector" id="ratingSelector">
+                    <i class="fas fa-star rating-star" data-rating="1"></i>
+                    <i class="fas fa-star rating-star" data-rating="2"></i>
+                    <i class="fas fa-star rating-star" data-rating="3"></i>
+                    <i class="fas fa-star rating-star" data-rating="4"></i>
+                    <i class="fas fa-star rating-star" data-rating="5"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reviewText">Your Review</label>
+                <textarea id="reviewText" class="form-control" placeholder="Share your experience..." required></textarea>
+            </div>
+            <button type="submit" class="submit-review">Submit Review</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
